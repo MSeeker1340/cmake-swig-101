@@ -62,3 +62,11 @@ mylib.addOne(1.0) = 2.0
 ```
 
 You may inspect the Swig generated wrapper module source at `build/lua/CMakeFiles/mylibLua.dir/mylibLUA_wrap.cxx`.
+
+## References
+
+* CMake's [documentation](https://cmake.org/cmake/help/latest/module/UseSWIG.html) on its Swig module. This [StackOverflow answer](https://stackoverflow.com/questions/1498969/generating-swig-bindings-with-cmake) also contains a good example on the Swig module (although slightly outdated).
+
+* Swig's official [Lua integration guide](https://swig.org/Doc4.0/Lua.html#Lua_nn24). The building instructions, however, is outdated and cannot be used with Lua 5.4.
+
+* The official [Programming in Lua](https://www.lua.org/pil/24.html) e-book contains excellent explanation of the Lua C API.

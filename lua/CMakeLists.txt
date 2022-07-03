@@ -2,8 +2,8 @@ cmake_minimum_required(VERSION 3.8.0)
 project(lua-binding-test VERSION 0.1.0)
 
 # set up swig lua
-# cmake_policy(SET CMP0078 NEW) # to surpress swig warnings
-# cmake_policy(SET CMP0086 NEW) # to surpress swig warnings
+cmake_policy(SET CMP0078 NEW) # to surpress swig warnings
+cmake_policy(SET CMP0086 NEW) # to surpress swig warnings
 find_package(SWIG REQUIRED COMPONENTS lua)
 include(${SWIG_USE_FILE})
 

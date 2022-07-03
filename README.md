@@ -46,8 +46,19 @@ sudo make install # installs the headers and `liblua.a` needed by `lua-binding-t
 
 ## How to run
 
-Setup and build the cmake project normally using the IDE of your choice. For example, the commandline-only approach is
+Setup, build and run the cmake project normally using the IDE of your choice. For example, the command-line-only approach is
 
 ```bash
+cmake -B build # cmake setup
+cd build && make # build
+./lua/lua-binding-test # run
+```
+
+You should see the following results on stdout
 
 ```
+Testing mylib extension module ...
+mylib.addOne(1.0) = 2.0
+```
+
+You may inspect the Swig generated wrapper module source at `build/lua/CMakeFiles/mylibLua.dir/mylibLUA_wrap.cxx`.
